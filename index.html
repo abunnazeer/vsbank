@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>vs Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header__box">
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="" srcset="" />
+        </div>
+        <div class="search__box">
+          <i class="fas fa-search"></i>
+          <input type="search" name="search" placeholder="search" id="" />
+        </div>
+        <div class="account__login--menu">
+          <div class="not__icon">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="user">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </header>
+    </div>
+    <aside class="side__bar">
+      <div class="side__bar--label side__bar_active--menu">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h3>Dashboard</h3>
+      </div>
+      <div class="side__bar--label">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h3>Payment</h3>
+      </div>
+      <div class="side__bar--label">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h3>Statistic</h3>
+      </div>
+      <div class="side__bar--label">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h3>Account</h3>
+      </div>
+      <div class="side__bar--label">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h3>Settings</h3>
+      </div>
+    </aside>
+
+    <section class="main__app">
+      <p class="medium__label">Dashboard</p>
+      <div class="card__and__balance">
+        <div class="card__details">
+          <h3 class="card__number big__title">2098 9898 9898 0980</h3>
+          <div class="name__box">
+            <div>
+              <label for="name" id="card__name">Name:</label>
+              <h5 class="card__holder--name">Abdullahi Ahmad</h5>
+            </div>
+
+            <div>
+              <span class="card__label">Valid Thru</span>
+              <span class="card__expiry--date"> 21/08</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="balance__container">
+          <div class="balance__box">
+            <p class="medium__label--20">Available Balance</p>
+            <h3 class="big__title">$45,781</h3>
+          </div>
+
+          <div class="send__money--box">
+            <div class="send__money">
+              <p>Send Money</p>
+            </div>
+            <div class="req__loan">
+              <p>Request loan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recent__transaction">
+        <div class="trans__header flex__header">
+          <div class="medium__label">Recent transaction</div>
+
+          <div class="sort__by">
+            <!-- <label for="">Sort by &bra</label> -->
+            <select name="filter" class="filter">
+              <option value="week">Week</option>
+              <option value="days">Days</option>
+              <option value="months">Months</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="deposit__trans trans__container">
+          <p class="deposit__label">Deposit</p>
+          <p class="date__of--trans">12/08/2022</p>
+          <span class="amount">$3000</span>
+        </div>
+
+        <div class="withdraw__trans trans__container">
+          <p class="withdraw__label">Deposit</p>
+          <p class="date__of--trans">12/08/2022</p>
+          <span class="amount">$3000</span>
+        </div>
+      </div>
+
+      <aside class="right__side--bar">
+        <div class="side__bar--container">
+          <p class="small__label">Spent this day</p>
+          <div class="flex__header">
+            <h3 class="amount">$259.75</h3>
+            <div class="filter__box">
+              <select name="filter" id="">
+                <option value="week">Week</option>
+                <option value="days">Days</option>
+                <option value="months">Months</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="chart__box"></div>
+          <p class="medium__label">Available cards</p>
+          <div class="small__card--box">
+            <p class="medium__label bold medium__label--20 flex__1">98,500</p>
+            <p class="medium__label medium__label--20">...4141</p>
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+          </div>
+          <div class="small__card--box">
+            <p class="medium__label bold medium__label--20 flex__1">98,500</p>
+            <p class="medium__label medium__label--20">...4141</p>
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
